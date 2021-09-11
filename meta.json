@@ -1,0 +1,23 @@
+{
+    "jurisdiction": {
+      "name": "Iceland",
+      "id": "Q189"
+    },
+    "legislature": {
+      "id": "Q517449",
+      "member": "Q52474426",
+      "term": {
+        "id": "Q52474636",
+        "start": "2017-12-14"
+      }
+    },
+    "source": {
+        "url":   "https://www.althingi.is/altext/cv/en/",
+        "title": "Members of Parliament | Alþingi",
+        "lang":  {
+            "code": "en",
+            "wikidata": "Q1860"
+        }
+    },
+    "agent": "every-politican-scrapers/iceland-althing"
+}
