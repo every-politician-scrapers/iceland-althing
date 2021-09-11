@@ -42,5 +42,6 @@ module.exports = function () {
         ?district rdfs:label ?constituency .
       }
     }
+    # ${new Date().toISOString()}
     ORDER BY ?item`
 }
