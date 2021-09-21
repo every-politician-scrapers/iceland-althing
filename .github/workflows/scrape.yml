@@ -20,7 +20,7 @@ jobs:
     - name: Scrape official site (mirrored earlier)
       run: bundle exec ruby bin/scraper/official.rb | ifne tee data/official.csv
     - name: Generate diff
-      run: bundle exec ruby bin/diff.rb | tee data/diff.csv
+      run: bundle exec ruby bin/diff.rb | ifne tee data/diff.csv
     - name: Create pull request
       id: cpr
       uses: peter-evans/create-pull-request@v3
