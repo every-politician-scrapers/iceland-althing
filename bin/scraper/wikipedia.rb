@@ -21,7 +21,7 @@ class MembersPage < Scraped::HTML
 
   field :members do
     member_rows.flat_map { |tr| tr.css('td').each_slice(3).each_with_index.map { |tds, i| 
-      constituency =  tr.xpath('preceding::tr[th[@colspan]]/th')[i]
+      constituency =  tr.xpath('preceding::tr[th[@colspan]][1]/th')[i]
       fragment({tds: tds, constituency: constituency} => Member)
     } }.reject(&:empty?).map(&:to_h)
   end
